@@ -1,0 +1,12 @@
+<h1 class="text-center">API POKEMON</h1>
+<br>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div *ngFor="let item of pokemon" class="col">
+      <div class="card rounded">
+        <img [src]="'assets/img/pokemon/'+item.entry_number+'.png'" class="center" [alt]="item.pokemon_species.name">
+        <div class="card-body">
+          <h5 class="card-title text-center">{{item.pokemon_species.name}}</h5>
+        </div>
+      </div>
+    </div>
+</div>
